@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>{{{title}}}</title>
+    <title>aaa</title>
     {{#absoluteUrl}}
     <meta property="og:title" content="{{{title}}}" />
     <meta property="og:type" content="website" />
@@ -17,13 +16,16 @@
     <link rel="stylesheet" href="{{{base}}}{{{highlightThemeUrl}}}" />
     {{#cssPaths}}
     <link rel="stylesheet" href="{{{base}}}/{{{.}}}" />
-    {{/cssPaths}}
 
+    {{/cssPaths}}
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     {{#watch}}
+    
     <script>
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
     </script>
     {{/watch}}
+
   </head>
   <body>
     <div class="reveal">
@@ -37,6 +39,12 @@
     <script src="{{{base}}}/plugin/zoom/zoom.js"></script>
     <script src="{{{base}}}/plugin/notes/notes.js"></script>
     <script src="{{{base}}}/plugin/math/math.js"></script>
+    <script src="{{{base}}}/plugin/mermaid/mermaid.min.js"></script>
+    <script src="{{{base}}}/plugin/mermaid/reveal-mermaid.js"></script>
+    <script src="{{{base}}}/plugin/mindmap/d3.min.js"></script>
+    <script src="{{{base}}}/plugin/mindmap/markmap-view.js"></script>
+    <script src="{{{base}}}/plugin/mindmap/markmap-lib.js"></script>
+    <script src="{{{base}}}/plugin/mindmap/reveal-mindmap.js"></script>
     <script>
       function extend() {
         var target = {};
