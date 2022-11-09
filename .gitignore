@@ -3,3 +3,6 @@
 _static
 /dist
 /node_modules
+p
+
+.DS_Store
